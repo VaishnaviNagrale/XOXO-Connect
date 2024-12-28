@@ -6,6 +6,7 @@ class SocketClient {
   static SocketClient? _instance;
 
   SocketClient._internal() {
+    print(dotenv.env['SERVER_IP']);
     socket = io.io(dotenv.env['SERVER_IP'], <String, dynamic>{
       'transports': ['websocket'],
       'autoConnect': false,
