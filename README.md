@@ -1,5 +1,5 @@
-# XOXO-Connect 🎮✨  
-
+# XOXO-Connect 🎮
+<!-- 
 **XOXO-Connect** is a real-time, multiplayer Tic-Tac-Toe game that offers an immersive glow-themed UI and works seamlessly across Android, iOS, Web, macOS, and Windows. Built with Flutter for the frontend and Node.js with Socket.IO for the backend, it provides instant communication and a fun gaming experience.  
 
 ---
@@ -24,4 +24,4 @@
 ## How to Run  
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/VaishnaviNagrale/XOXO-Connect.git
+   git clone https://github.com/VaishnaviNagrale/XOXO-Connect.git -->
