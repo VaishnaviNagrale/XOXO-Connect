@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:mp_tictactoe/provider/room_data_provider.dart';
 import 'package:mp_tictactoe/resources/socket_methods.dart';
@@ -29,6 +31,7 @@ class _TicTacToeBoardState extends State<TicTacToeBoard> {
 
   @override
   Widget build(BuildContext context) {
+    bool isDarkMode = Theme.of(context).brightness == Brightness.dark;
     final size = MediaQuery.of(context).size;
     RoomDataProvider roomDataProvider = Provider.of<RoomDataProvider>(context);
 
@@ -51,7 +54,8 @@ class _TicTacToeBoardState extends State<TicTacToeBoard> {
               child: Container(
                 decoration: BoxDecoration(
                   border: Border.all(
-                    color: Colors.white24,
+                    color: isDarkMode ? Colors.white : Colors.black,
+                    width: sqrt1_2,
                   ),
                 ),
                 child: Center(
@@ -60,7 +64,6 @@ class _TicTacToeBoardState extends State<TicTacToeBoard> {
                     child: Text(
                       roomDataProvider.displayElements[index],
                       style: TextStyle(
-                          color: Colors.white,
                           fontWeight: FontWeight.bold,
                           fontSize: 100,
                           shadows: [

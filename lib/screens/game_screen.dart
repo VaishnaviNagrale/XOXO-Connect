@@ -35,7 +35,7 @@ class _GameScreenState extends State<GameScreen> {
           ? const WaitingLobby()
           : SafeArea(
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   const Scoreboard(),
                   const TicTacToeBoard(),

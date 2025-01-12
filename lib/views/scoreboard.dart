@@ -28,7 +28,6 @@ class Scoreboard extends StatelessWidget {
                 roomDataProvider.player1.points.toInt().toString(),
                 style: const TextStyle(
                   fontSize: 20,
-                  color: Colors.white,
                 ),
               ),
             ],
@@ -50,7 +49,6 @@ class Scoreboard extends StatelessWidget {
                 roomDataProvider.player2.points.toInt().toString(),
                 style: const TextStyle(
                   fontSize: 20,
-                  color: Colors.white,
                 ),
               ),
             ],

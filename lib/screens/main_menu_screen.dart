@@ -59,7 +59,6 @@ class MainMenuScreen extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.normal,
-                      color: Colors.white70,
                       shadows: [
                         Shadow(
                           blurRadius: 50,

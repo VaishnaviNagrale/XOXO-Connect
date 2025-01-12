@@ -6,7 +6,6 @@ void showSnackBar(BuildContext context, String content) {
     SnackBar(
       content: Text(
         content,
-        style:const TextStyle(color: Colors.white),
       ),
       backgroundColor: Colors.blue,
       behavior: SnackBarBehavior.floating,

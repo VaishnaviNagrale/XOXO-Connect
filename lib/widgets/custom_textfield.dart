@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mp_tictactoe/utils/colors.dart';
 
 class CustomTextField extends StatelessWidget {
   final TextEditingController controller;
@@ -29,7 +28,6 @@ class CustomTextField extends StatelessWidget {
         readOnly: isReadOnly,
         controller: controller,
         decoration: InputDecoration(
-          fillColor: bgColor,
           filled: true,
           hintText: hintText,
           hintStyle: const TextStyle(

@@ -8,6 +8,7 @@ import 'package:mp_tictactoe/screens/join_room_screen.dart';
 import 'package:mp_tictactoe/screens/main_menu_screen.dart';
 import 'package:mp_tictactoe/screens/splash_screen.dart';
 import 'package:mp_tictactoe/utils/colors.dart';
+import 'package:mp_tictactoe/utils/my_themes.dart';
 import 'package:provider/provider.dart';
 
 void main() async {
@@ -32,10 +33,10 @@ class MyApp extends StatelessWidget {
       create: (context) => RoomDataProvider(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Muti Player Tic Tac Toe Game',
-        theme: ThemeData.dark().copyWith(
-          scaffoldBackgroundColor: bgColor,
-        ),
+        title: 'XOXO-connect',
+        themeMode: ThemeMode.system,
+        darkTheme: MyThemes.darkTheme,
+        theme: MyThemes.lightTheme,
         routes: {
           MainMenuScreen.routeName: (context) => const MainMenuScreen(),
           JoinRoomScreen.routeName: (context) => const JoinRoomScreen(),
